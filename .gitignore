@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local data and generated artifacts
+data/raw/
+data/processed/*.csv
+data/processed/*.npy
+data/processed/*.npz
+data/processed/*.pkl
+data/processed/*.parquet
+outputs/
+
+# Keep directory placeholders if we add them later.
+!.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
