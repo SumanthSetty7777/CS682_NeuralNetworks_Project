@@ -44,6 +44,11 @@ def load_model(device: torch.device) -> torch.nn.Module:
     model = vggish()
     model.eval()
     model = model.to(device)
+    if hasattr(model, "pproc"):
+        # torchvggish stores PCA postprocessor tensors outside nn.Module buffers,
+        # so model.to(device) does not move them automatically.
+        model.pproc._pca_matrix = model.pproc._pca_matrix.to(device)
+        model.pproc._pca_means = model.pproc._pca_means.to(device)
     return model
 
 
@@ -62,8 +67,16 @@ def extract_embedding(audio_path: Path, model: torch.nn.Module, device: torch.de
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--manifest", type=Path, default=Path("data/processed/fma_small_manifest.csv"))
-    parser.add_argument("--output", type=Path, default=Path("data/processed/pretrained_embeddings.csv"))
+    parser.add_argument(
+        "--manifest",
+        type=Path,
+        default=Path("data/processed/manifests/fma_small_manifest.csv"),
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=Path("data/processed/pretrained/pretrained_embeddings.csv"),
+    )
     parser.add_argument("--failures-output", type=Path, default=None)
     parser.add_argument("--debug", action="store_true")
     parser.add_argument("--debug-n", type=int, default=DEFAULT_DEBUG_N)
@@ -110,10 +123,9 @@ def main() -> None:
     pd.DataFrame(rows).to_csv(output, index=False)
     print(f"Wrote {output} with {len(rows)} embeddings")
 
-    if failures:
-        failures_output.parent.mkdir(parents=True, exist_ok=True)
-        pd.DataFrame(failures).to_csv(failures_output, index=False)
-        print(f"Wrote {failures_output} with {len(failures)} failures")
+    failures_output.parent.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(failures, columns=["track_id", "error"]).to_csv(failures_output, index=False)
+    print(f"Wrote {failures_output} with {len(failures)} failures")
 
 
 if __name__ == "__main__":
