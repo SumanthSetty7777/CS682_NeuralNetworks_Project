@@ -20,6 +20,25 @@ data/raw/
     ...
 ```
 
+## Code Layout
+
+```text
+src/shared/
+  Dataset manifests, generic embedding evaluation, plotting
+
+src/handcrafted/
+  Handcrafted feature extraction and handcrafted-only retrieval baselines
+
+src/pretrained/
+  VGGish pretrained embedding extraction
+
+src/trained/
+  Mel-spectrogram caching and CNN/ResNet training from scratch
+
+src/trained/legacy/
+  Earlier CNN scripts kept for reference; not the final pipeline
+```
+
 If the downloaded files are still zipped, move them into `data/raw/` and unzip them there:
 
 ```bash
@@ -34,7 +53,7 @@ unzip fma_small.zip
 After `fma_metadata` is unzipped, run:
 
 ```bash
-python3 src/build_manifest.py \
+python3 src/shared/build_manifest.py \
   --tracks-csv data/raw/fma_metadata/tracks.csv \
   --genres-csv data/raw/fma_metadata/genres.csv \
   --audio-root data/raw/fma_small \
@@ -64,7 +83,7 @@ data/raw/fma_medium_audio/
 Build the medium manifest:
 
 ```bash
-python3 src/build_manifest.py \
+python3 src/shared/build_manifest.py \
   --tracks-csv data/raw/fma_metadata/tracks.csv \
   --genres-csv data/raw/fma_metadata/genres.csv \
   --audio-root data/raw/fma_medium_audio \
@@ -77,7 +96,7 @@ python3 src/build_manifest.py \
 After the manifest shows that audio files exist, run a small test first:
 
 ```bash
-python3 src/extract_handcrafted_features.py \
+python3 src/handcrafted/extract_features.py \
   --manifest data/processed/fma_small_manifest.csv \
   --output data/processed/handcrafted_features_debug.csv \
   --limit 25
@@ -86,7 +105,7 @@ python3 src/extract_handcrafted_features.py \
 Then run the full feature extraction:
 
 ```bash
-python3 src/extract_handcrafted_features.py \
+python3 src/handcrafted/extract_features.py \
   --manifest data/processed/fma_small_manifest.csv \
   --output data/processed/handcrafted_features.csv
 ```
@@ -98,7 +117,7 @@ This produces tempo, energy, spectral features, and MFCC summary statistics.
 Evaluate handcrafted feature groups with nearest-neighbor retrieval:
 
 ```bash
-python src/evaluate_retrieval.py \
+python src/handcrafted/evaluate_retrieval.py \
   --manifest data/processed/fma_small_manifest.csv \
   --features data/processed/handcrafted_features.csv \
   --output outputs/reports/handcrafted_retrieval_metrics.csv
@@ -120,7 +139,7 @@ It evaluates four report-facing handcrafted representations:
 Plot the metrics:
 
 ```bash
-python src/plot_retrieval_metrics.py \
+python src/shared/plot_retrieval_metrics.py \
   --metrics outputs/reports/handcrafted_retrieval_metrics.csv \
   --output outputs/reports/handcrafted_retrieval_metrics.png
 ```
@@ -130,7 +149,7 @@ python src/plot_retrieval_metrics.py \
 Cache 15-second mel spectrograms. Start with a balanced debug run:
 
 ```bash
-python src/cache_mel_spectrograms.py \
+python src/trained/cache_mel_spectrograms.py \
   --manifest data/processed/fma_small_manifest.csv \
   --output-dir data/processed/mels_15s_debug \
   --index-output data/processed/mel_spectrograms_15s_debug.csv \
@@ -140,7 +159,7 @@ python src/cache_mel_spectrograms.py \
 Train the debug CNN:
 
 ```bash
-python src/train_cnn_genre.py \
+python src/trained/train_cnn_genre.py \
   --mel-index data/processed/mel_spectrograms_15s_debug.csv \
   --output-dir outputs/models/cnn_genre_debug \
   --embeddings-output data/processed/cnn_embeddings_debug.csv \
@@ -151,7 +170,7 @@ python src/train_cnn_genre.py \
 Then cache the full mel set:
 
 ```bash
-python src/cache_mel_spectrograms.py \
+python src/trained/cache_mel_spectrograms.py \
   --manifest data/processed/fma_small_manifest.csv \
   --output-dir data/processed/mels_15s \
   --index-output data/processed/mel_spectrograms_15s.csv
@@ -160,7 +179,7 @@ python src/cache_mel_spectrograms.py \
 Train the full CNN genre baseline:
 
 ```bash
-python src/train_cnn_genre.py \
+python src/trained/train_cnn_genre.py \
   --mel-index data/processed/mel_spectrograms_15s.csv \
   --output-dir outputs/models/cnn_genre \
   --embeddings-output data/processed/cnn_embeddings.csv \
@@ -173,7 +192,7 @@ The CNN is a lightweight genre-supervised baseline. Its goal is not state-of-the
 If the small CNN trains quickly, run a stronger medium CNN experiment:
 
 ```bash
-python src/train_cnn_genre.py \
+python src/trained/train_cnn_genre.py \
   --mel-index data/processed/mel_spectrograms_15s.csv \
   --output-dir outputs/models/cnn_genre_medium \
   --embeddings-output data/processed/cnn_embeddings_medium.csv \
@@ -191,7 +210,7 @@ Use the medium model only if validation/test accuracy and retrieval metrics impr
 For the final FMA-medium CNN experiment, prefer the compact ResNet-style model:
 
 ```bash
-python src/train_cnn_genre.py \
+python src/trained/train_cnn_genre.py \
   --mel-index data/processed/mel_spectrograms_15s_medium.csv \
   --output-dir outputs/models/cnn_genre_resnet_medium \
   --embeddings-output data/processed/cnn_embeddings_resnet_medium.csv \
@@ -207,7 +226,7 @@ python src/train_cnn_genre.py \
 Evaluate CNN embeddings on test queries:
 
 ```bash
-python src/evaluate_model_embeddings.py \
+python src/shared/evaluate_model_embeddings.py \
   --manifest data/processed/fma_small_manifest.csv \
   --embeddings data/processed/cnn_embeddings.csv \
   --target-features data/processed/handcrafted_features.csv \
@@ -215,6 +234,31 @@ python src/evaluate_model_embeddings.py \
   --representation-name cnn_genre \
   --query-track-ids outputs/models/cnn_genre/cnn_genre_split.csv \
   --query-split test
+```
+
+## Pretrained VGGish Embeddings
+
+Extract VGGish embeddings from a manifest:
+
+```bash
+python src/pretrained/extract_vggish_embeddings.py \
+  --manifest data/processed/fma_small_manifest.csv \
+  --output data/processed/pretrained_embeddings.csv
+```
+
+Debug run:
+
+```bash
+python src/pretrained/extract_vggish_embeddings.py \
+  --manifest data/processed/fma_small_manifest.csv \
+  --output data/processed/pretrained_embeddings.csv \
+  --debug
+```
+
+The output format matches the shared evaluator:
+
+```text
+track_id, emb_000, emb_001, ...
 ```
 
 ## Planned Pipeline

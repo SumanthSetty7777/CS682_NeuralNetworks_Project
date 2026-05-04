@@ -5,6 +5,7 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .matplotlib_cache/
+.torch_cache/
 
 # Virtual environments
 .venv/
