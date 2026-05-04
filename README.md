@@ -52,6 +52,26 @@ This creates one clean CSV with:
 
 If `fma_small` has not finished downloading yet, the script can still run, but `exists` will be `false`.
 
+For FMA medium, download and unzip `fma_medium.zip`, then build a manifest using both small and medium audio roots under one folder. One layout is:
+
+```text
+data/raw/fma_medium_audio/
+  000/
+  001/
+  ...
+```
+
+Build the medium manifest:
+
+```bash
+python3 src/build_manifest.py \
+  --tracks-csv data/raw/fma_metadata/tracks.csv \
+  --genres-csv data/raw/fma_metadata/genres.csv \
+  --audio-root data/raw/fma_medium_audio \
+  --subset medium \
+  --output data/processed/fma_medium_manifest.csv
+```
+
 ## Handcrafted Features
 
 After the manifest shows that audio files exist, run a small test first:
@@ -72,6 +92,130 @@ python3 src/extract_handcrafted_features.py \
 ```
 
 This produces tempo, energy, spectral features, and MFCC summary statistics.
+
+## Retrieval Evaluation
+
+Evaluate handcrafted feature groups with nearest-neighbor retrieval:
+
+```bash
+python src/evaluate_retrieval.py \
+  --manifest data/processed/fma_small_manifest.csv \
+  --features data/processed/handcrafted_features.csv \
+  --output outputs/reports/handcrafted_retrieval_metrics.csv
+```
+
+The script reports:
+
+- genre Precision@K
+- rhythm Precision@K using tempo within 10 BPM
+- mood-proxy Precision@K, where relevant tracks are the closest 5% in energy/spectral proxy space
+
+It evaluates four report-facing handcrafted representations:
+
+- `tempo_only`: rhythm reference based only on BPM
+- `mood_proxy`: energy/brightness reference based on RMS and spectral features
+- `mfcc_only`: timbre-focused handcrafted baseline
+- `handcrafted_full`: all extracted handcrafted features
+
+Plot the metrics:
+
+```bash
+python src/plot_retrieval_metrics.py \
+  --metrics outputs/reports/handcrafted_retrieval_metrics.csv \
+  --output outputs/reports/handcrafted_retrieval_metrics.png
+```
+
+## CNN Genre Baseline
+
+Cache 15-second mel spectrograms. Start with a balanced debug run:
+
+```bash
+python src/cache_mel_spectrograms.py \
+  --manifest data/processed/fma_small_manifest.csv \
+  --output-dir data/processed/mels_15s_debug \
+  --index-output data/processed/mel_spectrograms_15s_debug.csv \
+  --limit-per-genre 8
+```
+
+Train the debug CNN:
+
+```bash
+python src/train_cnn_genre.py \
+  --mel-index data/processed/mel_spectrograms_15s_debug.csv \
+  --output-dir outputs/models/cnn_genre_debug \
+  --embeddings-output data/processed/cnn_embeddings_debug.csv \
+  --epochs 2 \
+  --batch-size 16
+```
+
+Then cache the full mel set:
+
+```bash
+python src/cache_mel_spectrograms.py \
+  --manifest data/processed/fma_small_manifest.csv \
+  --output-dir data/processed/mels_15s \
+  --index-output data/processed/mel_spectrograms_15s.csv
+```
+
+Train the full CNN genre baseline:
+
+```bash
+python src/train_cnn_genre.py \
+  --mel-index data/processed/mel_spectrograms_15s.csv \
+  --output-dir outputs/models/cnn_genre \
+  --embeddings-output data/processed/cnn_embeddings.csv \
+  --epochs 10 \
+  --batch-size 64
+```
+
+The CNN is a lightweight genre-supervised baseline. Its goal is not state-of-the-art genre classification; it gives us penultimate-layer embeddings trained specifically with genre labels. The training script uses a stratified train/validation/test split, saves the best model by validation accuracy, reports test accuracy, and exports embeddings for all cached tracks.
+
+If the small CNN trains quickly, run a stronger medium CNN experiment:
+
+```bash
+python src/train_cnn_genre.py \
+  --mel-index data/processed/mel_spectrograms_15s.csv \
+  --output-dir outputs/models/cnn_genre_medium \
+  --embeddings-output data/processed/cnn_embeddings_medium.csv \
+  --epochs 20 \
+  --batch-size 128 \
+  --model-size medium \
+  --embedding-dim 128 \
+  --dropout 0.4 \
+  --label-smoothing 0.05 \
+  --patience 5
+```
+
+Use the medium model only if validation/test accuracy and retrieval metrics improve; otherwise keep the simpler CNN as the cleaner baseline.
+
+For the final FMA-medium CNN experiment, prefer the compact ResNet-style model:
+
+```bash
+python src/train_cnn_genre.py \
+  --mel-index data/processed/mel_spectrograms_15s_medium.csv \
+  --output-dir outputs/models/cnn_genre_resnet_medium \
+  --embeddings-output data/processed/cnn_embeddings_resnet_medium.csv \
+  --epochs 30 \
+  --batch-size 128 \
+  --model-size resnet \
+  --embedding-dim 128 \
+  --dropout 0.4 \
+  --label-smoothing 0.05 \
+  --patience 6
+```
+
+Evaluate CNN embeddings on test queries:
+
+```bash
+python src/evaluate_model_embeddings.py \
+  --manifest data/processed/fma_small_manifest.csv \
+  --embeddings data/processed/cnn_embeddings.csv \
+  --target-features data/processed/handcrafted_features.csv \
+  --output outputs/reports/cnn_retrieval_metrics_test_queries.csv \
+  --representation-name cnn_genre \
+  --query-track-ids outputs/models/cnn_genre/cnn_genre_split.csv \
+  --query-split test
+```
 
 ## Planned Pipeline
 

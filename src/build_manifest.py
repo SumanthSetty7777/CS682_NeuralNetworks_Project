@@ -28,13 +28,24 @@ def load_genres(genres_csv: Path) -> pd.DataFrame:
     return genres[["genre_id", "genre_title", "top_level"]]
 
 
-def build_manifest(tracks_csv: Path, genres_csv: Path, audio_root: Path) -> pd.DataFrame:
-    tracks = load_tracks(tracks_csv)
-    small = tracks[tracks[("set", "subset")] == "small"].copy()
+def subset_values(subset: str) -> list[str]:
+    if subset == "small":
+        return ["small"]
+    if subset == "medium":
+        return ["small", "medium"]
+    if subset == "large":
+        return ["small", "medium", "large"]
+    raise ValueError(f"Unknown subset: {subset}")
 
-    manifest = pd.DataFrame(index=small.index)
-    manifest["track_id"] = small.index.astype(int)
-    manifest["genre_top"] = small[("track", "genre_top")]
+
+def build_manifest(tracks_csv: Path, genres_csv: Path, audio_root: Path, subset: str) -> pd.DataFrame:
+    tracks = load_tracks(tracks_csv)
+    selected = tracks[tracks[("set", "subset")].isin(subset_values(subset))].copy()
+
+    manifest = pd.DataFrame(index=selected.index)
+    manifest["track_id"] = selected.index.astype(int)
+    manifest["subset"] = selected[("set", "subset")]
+    manifest["genre_top"] = selected[("track", "genre_top")]
 
     genres = load_genres(genres_csv)
     top_level_genres = genres[genres["genre_id"] == genres["top_level"]].copy()
@@ -50,7 +61,7 @@ def build_manifest(tracks_csv: Path, genres_csv: Path, audio_root: Path) -> pd.D
     )
     manifest["exists"] = manifest["audio_path"].apply(lambda path: Path(path).exists())
 
-    cols = ["track_id", "audio_path", "genre_top", "genre_id", "genre_title", "exists"]
+    cols = ["track_id", "subset", "audio_path", "genre_top", "genre_id", "genre_title", "exists"]
     return manifest[cols].sort_values("track_id").reset_index(drop=True)
 
 
@@ -60,12 +71,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--genres-csv", type=Path, required=True)
     parser.add_argument("--audio-root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--subset",
+        choices=["small", "medium", "large"],
+        default="small",
+        help="FMA subset to build. medium includes small+medium; large includes all three.",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    manifest = build_manifest(args.tracks_csv, args.genres_csv, args.audio_root)
+    manifest = build_manifest(args.tracks_csv, args.genres_csv, args.audio_root, args.subset)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     manifest.to_csv(args.output, index=False)
@@ -73,7 +90,7 @@ def main() -> None:
     total = len(manifest)
     found = int(manifest["exists"].sum())
     print(f"Wrote {args.output}")
-    print(f"Tracks in FMA small metadata: {total}")
+    print(f"Tracks in FMA {args.subset} metadata: {total}")
     print(f"Audio files found: {found}")
     print(f"Missing audio files: {total - found}")
     print("Genre counts:")
