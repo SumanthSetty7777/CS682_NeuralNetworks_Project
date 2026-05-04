@@ -1,0 +1,10 @@
+representation,metric,k,value
+cnn_genre,genre_precision,5,0.451
+cnn_genre,rhythm_precision,5,0.2306666666666667
+cnn_genre,mood_proxy_precision,5,0.21133333333333335
+cnn_genre,genre_precision,10,0.43825
+cnn_genre,rhythm_precision,10,0.22599999999999998
+cnn_genre,mood_proxy_precision,10,0.20775000000000002
+cnn_genre,genre_precision,20,0.43066666666666664
+cnn_genre,rhythm_precision,20,0.22716666666666668
+cnn_genre,mood_proxy_precision,20,0.19520833333333334

@@ -1,0 +1,13 @@
+{
+  "best_val_accuracy": 0.6491462113127001,
+  "test_loss": 1.333717646568282,
+  "test_accuracy": 0.6384738527214514,
+  "train_tracks": 17489,
+  "val_tracks": 3748,
+  "test_tracks": 3748,
+  "model_size": "resnet",
+  "embedding_dim": 128,
+  "dropout": 0.4,
+  "label_smoothing": 0.05,
+  "epochs_run": 15
+}

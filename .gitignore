@@ -15,7 +15,7 @@ env/
 # Local data and generated artifacts
 data/raw/
 data/processed/
-outputs/
+# outputs/
 
 # Keep directory placeholders if we add them later.
 !.gitkeep
