@@ -1,0 +1,769 @@
+representation,query_genre,retrieved_genre,fraction
+handcrafted_full,Blues,Blues,0.145454540848732
+handcrafted_full,Blues,Classical,0.0
+handcrafted_full,Blues,Country,0.0181818176060915
+handcrafted_full,Blues,Easy Listening,0.00909090880304575
+handcrafted_full,Blues,Electronic,0.072727270424366
+handcrafted_full,Blues,Experimental,0.027272727340459824
+handcrafted_full,Blues,Folk,0.08181817829608917
+handcrafted_full,Blues,Hip-Hop,0.13636364042758942
+handcrafted_full,Blues,Instrumental,0.00909090880304575
+handcrafted_full,Blues,International,0.05454545468091965
+handcrafted_full,Blues,Jazz,0.00909090880304575
+handcrafted_full,Blues,Old-Time / Historic,0.0
+handcrafted_full,Blues,Pop,0.027272727340459824
+handcrafted_full,Blues,Rock,0.40909090638160706
+handcrafted_full,Blues,Soul-RnB,0.0
+handcrafted_full,Blues,Spoken,0.0
+handcrafted_full,Classical,Blues,0.0021505376789718866
+handcrafted_full,Classical,Classical,0.6236559152603149
+handcrafted_full,Classical,Country,0.0021505376789718866
+handcrafted_full,Classical,Easy Listening,0.0
+handcrafted_full,Classical,Electronic,0.05483870953321457
+handcrafted_full,Classical,Experimental,0.05376344174146652
+handcrafted_full,Classical,Folk,0.062365591526031494
+handcrafted_full,Classical,Hip-Hop,0.003225806402042508
+handcrafted_full,Classical,Instrumental,0.08387096971273422
+handcrafted_full,Classical,International,0.03548387065529823
+handcrafted_full,Classical,Jazz,0.024731183424592018
+handcrafted_full,Classical,Old-Time / Historic,0.006451612804085016
+handcrafted_full,Classical,Pop,0.016129031777381897
+handcrafted_full,Classical,Rock,0.027956988662481308
+handcrafted_full,Classical,Soul-RnB,0.0010752688394859433
+handcrafted_full,Classical,Spoken,0.0021505376789718866
+handcrafted_full,Country,Blues,0.003703703638166189
+handcrafted_full,Country,Classical,0.0
+handcrafted_full,Country,Country,0.21111111342906952
+handcrafted_full,Country,Easy Listening,0.0
+handcrafted_full,Country,Electronic,0.08148147910833359
+handcrafted_full,Country,Experimental,0.025925925001502037
+handcrafted_full,Country,Folk,0.09259258955717087
+handcrafted_full,Country,Hip-Hop,0.05925925821065903
+handcrafted_full,Country,Instrumental,0.014814814552664757
+handcrafted_full,Country,International,0.05925925821065903
+handcrafted_full,Country,Jazz,0.018518518656492233
+handcrafted_full,Country,Old-Time / Historic,0.0
+handcrafted_full,Country,Pop,0.04444444552063942
+handcrafted_full,Country,Rock,0.38148146867752075
+handcrafted_full,Country,Soul-RnB,0.007407407276332378
+handcrafted_full,Country,Spoken,0.0
+handcrafted_full,Easy Listening,Blues,0.0
+handcrafted_full,Easy Listening,Classical,0.0
+handcrafted_full,Easy Listening,Country,0.0
+handcrafted_full,Easy Listening,Easy Listening,0.0
+handcrafted_full,Easy Listening,Electronic,0.3333333432674408
+handcrafted_full,Easy Listening,Experimental,0.1666666716337204
+handcrafted_full,Easy Listening,Folk,0.06666667014360428
+handcrafted_full,Easy Listening,Hip-Hop,0.2666666805744171
+handcrafted_full,Easy Listening,Instrumental,0.03333333507180214
+handcrafted_full,Easy Listening,International,0.0
+handcrafted_full,Easy Listening,Jazz,0.0
+handcrafted_full,Easy Listening,Old-Time / Historic,0.0
+handcrafted_full,Easy Listening,Pop,0.0
+handcrafted_full,Easy Listening,Rock,0.13333334028720856
+handcrafted_full,Easy Listening,Soul-RnB,0.0
+handcrafted_full,Easy Listening,Spoken,0.0
+handcrafted_full,Electronic,Blues,0.00221752910874784
+handcrafted_full,Electronic,Classical,0.01478352677077055
+handcrafted_full,Electronic,Country,0.005385427735745907
+handcrafted_full,Electronic,Easy Listening,0.0028511087875813246
+handcrafted_full,Electronic,Electronic,0.48500528931617737
+handcrafted_full,Electronic,Experimental,0.0461457222700119
+handcrafted_full,Electronic,Folk,0.03421330451965332
+handcrafted_full,Electronic,Hip-Hop,0.14223864674568176
+handcrafted_full,Electronic,Instrumental,0.031890179961919785
+handcrafted_full,Electronic,International,0.03220697119832039
+handcrafted_full,Electronic,Jazz,0.014149947091937065
+handcrafted_full,Electronic,Old-Time / Historic,0.0015839493134990335
+handcrafted_full,Electronic,Pop,0.04551214352250099
+handcrafted_full,Electronic,Rock,0.12925025820732117
+handcrafted_full,Electronic,Soul-RnB,0.010031678713858128
+handcrafted_full,Electronic,Spoken,0.0025343189481645823
+handcrafted_full,Experimental,Blues,0.002967359032481909
+handcrafted_full,Experimental,Classical,0.030563797801733017
+handcrafted_full,Experimental,Country,0.008902077563107014
+handcrafted_full,Experimental,Easy Listening,0.0011869436129927635
+handcrafted_full,Experimental,Electronic,0.21661721169948578
+handcrafted_full,Experimental,Experimental,0.17418397963047028
+handcrafted_full,Experimental,Folk,0.05044510215520859
+handcrafted_full,Experimental,Hip-Hop,0.06706231087446213
+handcrafted_full,Experimental,Instrumental,0.06854599714279175
+handcrafted_full,Experimental,International,0.04747774451971054
+handcrafted_full,Experimental,Jazz,0.017804155126214027
+handcrafted_full,Experimental,Old-Time / Historic,0.009792285040020943
+handcrafted_full,Experimental,Pop,0.05133531242609024
+handcrafted_full,Experimental,Rock,0.23798219859600067
+handcrafted_full,Experimental,Soul-RnB,0.004154302645474672
+handcrafted_full,Experimental,Spoken,0.010979228653013706
+handcrafted_full,Folk,Blues,0.0026315790601074696
+handcrafted_full,Folk,Classical,0.026754386723041534
+handcrafted_full,Folk,Country,0.011403508484363556
+handcrafted_full,Folk,Easy Listening,0.0004385965003166348
+handcrafted_full,Folk,Electronic,0.08859649300575256
+handcrafted_full,Folk,Experimental,0.06447368115186691
+handcrafted_full,Folk,Folk,0.38333332538604736
+handcrafted_full,Folk,Hip-Hop,0.0320175439119339
+handcrafted_full,Folk,Instrumental,0.07763157784938812
+handcrafted_full,Folk,International,0.05877193063497543
+handcrafted_full,Folk,Jazz,0.03596491366624832
+handcrafted_full,Folk,Old-Time / Historic,0.004824561532586813
+handcrafted_full,Folk,Pop,0.04868420958518982
+handcrafted_full,Folk,Rock,0.1570175439119339
+handcrafted_full,Folk,Soul-RnB,0.003947368357330561
+handcrafted_full,Folk,Spoken,0.003508772002533078
+handcrafted_full,Hip-Hop,Blues,0.00030395135399885476
+handcrafted_full,Hip-Hop,Classical,0.00030395135399885476
+handcrafted_full,Hip-Hop,Country,0.0018237081822007895
+handcrafted_full,Hip-Hop,Easy Listening,0.0015197568573057652
+handcrafted_full,Hip-Hop,Electronic,0.262613981962204
+handcrafted_full,Hip-Hop,Experimental,0.021884499117732048
+handcrafted_full,Hip-Hop,Folk,0.016109421849250793
+handcrafted_full,Hip-Hop,Hip-Hop,0.5200607776641846
+handcrafted_full,Hip-Hop,Instrumental,0.00881459005177021
+handcrafted_full,Hip-Hop,International,0.03738601878285408
+handcrafted_full,Hip-Hop,Jazz,0.007598784286528826
+handcrafted_full,Hip-Hop,Old-Time / Historic,0.0
+handcrafted_full,Hip-Hop,Pop,0.03495440632104874
+handcrafted_full,Hip-Hop,Rock,0.06960486620664597
+handcrafted_full,Hip-Hop,Soul-RnB,0.010942249558866024
+handcrafted_full,Hip-Hop,Spoken,0.006079027429223061
+handcrafted_full,Instrumental,Blues,0.002475247485563159
+handcrafted_full,Instrumental,Classical,0.10297029465436935
+handcrafted_full,Instrumental,Country,0.007920792326331139
+handcrafted_full,Instrumental,Easy Listening,0.0004950495203956962
+handcrafted_full,Instrumental,Electronic,0.14504951238632202
+handcrafted_full,Instrumental,Experimental,0.11534653604030609
+handcrafted_full,Instrumental,Folk,0.1074257418513298
+handcrafted_full,Instrumental,Hip-Hop,0.02128712832927704
+handcrafted_full,Instrumental,Instrumental,0.21287128329277039
+handcrafted_full,Instrumental,International,0.039603959769010544
+handcrafted_full,Instrumental,Jazz,0.0356435626745224
+handcrafted_full,Instrumental,Old-Time / Historic,0.014851485379040241
+handcrafted_full,Instrumental,Pop,0.03465346619486809
+handcrafted_full,Instrumental,Rock,0.15445543825626373
+handcrafted_full,Instrumental,Soul-RnB,0.002970297122374177
+handcrafted_full,Instrumental,Spoken,0.0019801980815827847
+handcrafted_full,International,Blues,0.003921568859368563
+handcrafted_full,International,Classical,0.024183006957173347
+handcrafted_full,International,Country,0.02222222276031971
+handcrafted_full,International,Easy Listening,0.0013071895809844136
+handcrafted_full,International,Electronic,0.14575164020061493
+handcrafted_full,International,Experimental,0.04313725605607033
+handcrafted_full,International,Folk,0.062745101749897
+handcrafted_full,International,Hip-Hop,0.08888889104127884
+handcrafted_full,International,Instrumental,0.024183006957173347
+handcrafted_full,International,International,0.33986929059028625
+handcrafted_full,International,Jazz,0.03529411926865578
+handcrafted_full,International,Old-Time / Historic,0.0026143791619688272
+handcrafted_full,International,Pop,0.0470588244497776
+handcrafted_full,International,Rock,0.1483660191297531
+handcrafted_full,International,Soul-RnB,0.003921568859368563
+handcrafted_full,International,Spoken,0.006535947788506746
+handcrafted_full,Jazz,Blues,0.006896551698446274
+handcrafted_full,Jazz,Classical,0.0913793072104454
+handcrafted_full,Jazz,Country,0.02931034564971924
+handcrafted_full,Jazz,Easy Listening,0.0
+handcrafted_full,Jazz,Electronic,0.1465517282485962
+handcrafted_full,Jazz,Experimental,0.06896551698446274
+handcrafted_full,Jazz,Folk,0.08620689809322357
+handcrafted_full,Jazz,Hip-Hop,0.02931034564971924
+handcrafted_full,Jazz,Instrumental,0.07068965584039688
+handcrafted_full,Jazz,International,0.0672413781285286
+handcrafted_full,Jazz,Jazz,0.14482758939266205
+handcrafted_full,Jazz,Old-Time / Historic,0.005172413773834705
+handcrafted_full,Jazz,Pop,0.05517241358757019
+handcrafted_full,Jazz,Rock,0.18103447556495667
+handcrafted_full,Jazz,Soul-RnB,0.008620689623057842
+handcrafted_full,Jazz,Spoken,0.008620689623057842
+handcrafted_full,Old-Time / Historic,Blues,0.0013157895300537348
+handcrafted_full,Old-Time / Historic,Classical,0.01315789483487606
+handcrafted_full,Old-Time / Historic,Country,0.0013157895300537348
+handcrafted_full,Old-Time / Historic,Easy Listening,0.0
+handcrafted_full,Old-Time / Historic,Electronic,0.0026315790601074696
+handcrafted_full,Old-Time / Historic,Experimental,0.007894736714661121
+handcrafted_full,Old-Time / Historic,Folk,0.0013157895300537348
+handcrafted_full,Old-Time / Historic,Hip-Hop,0.0
+handcrafted_full,Old-Time / Historic,Instrumental,0.003947368357330561
+handcrafted_full,Old-Time / Historic,International,0.02368421107530594
+handcrafted_full,Old-Time / Historic,Jazz,0.003947368357330561
+handcrafted_full,Old-Time / Historic,Old-Time / Historic,0.9276315569877625
+handcrafted_full,Old-Time / Historic,Pop,0.003947368357330561
+handcrafted_full,Old-Time / Historic,Rock,0.009210526011884212
+handcrafted_full,Old-Time / Historic,Soul-RnB,0.0
+handcrafted_full,Old-Time / Historic,Spoken,0.0
+handcrafted_full,Pop,Blues,0.001123595517128706
+handcrafted_full,Pop,Classical,0.01123595517128706
+handcrafted_full,Pop,Country,0.018539326265454292
+handcrafted_full,Pop,Easy Listening,0.004494382068514824
+handcrafted_full,Pop,Electronic,0.22528089582920074
+handcrafted_full,Pop,Experimental,0.06516853719949722
+handcrafted_full,Pop,Folk,0.09325842559337616
+handcrafted_full,Pop,Hip-Hop,0.10168538987636566
+handcrafted_full,Pop,Instrumental,0.03988764062523842
+handcrafted_full,Pop,International,0.04438202083110809
+handcrafted_full,Pop,Jazz,0.016292134299874306
+handcrafted_full,Pop,Old-Time / Historic,0.007303370628505945
+handcrafted_full,Pop,Pop,0.09719101339578629
+handcrafted_full,Pop,Rock,0.2606741487979889
+handcrafted_full,Pop,Soul-RnB,0.006179775111377239
+handcrafted_full,Pop,Spoken,0.007303370628505945
+handcrafted_full,Rock,Blues,0.0015962441684678197
+handcrafted_full,Rock,Classical,0.0034741784911602736
+handcrafted_full,Rock,Country,0.01474178396165371
+handcrafted_full,Rock,Easy Listening,0.0001877934264484793
+handcrafted_full,Rock,Electronic,0.08938967436552048
+handcrafted_full,Rock,Experimental,0.030516432598233223
+handcrafted_full,Rock,Folk,0.029671361669898033
+handcrafted_full,Rock,Hip-Hop,0.02281690202653408
+handcrafted_full,Rock,Instrumental,0.02328638546168804
+handcrafted_full,Rock,International,0.022065727040171623
+handcrafted_full,Rock,Jazz,0.00882629118859768
+handcrafted_full,Rock,Old-Time / Historic,0.0010328638600185513
+handcrafted_full,Rock,Pop,0.04206572845578194
+handcrafted_full,Rock,Rock,0.7047887444496155
+handcrafted_full,Rock,Soul-RnB,0.0037558686453849077
+handcrafted_full,Rock,Spoken,0.0017840375658124685
+handcrafted_full,Soul-RnB,Blues,0.0
+handcrafted_full,Soul-RnB,Classical,0.0
+handcrafted_full,Soul-RnB,Country,0.03913043439388275
+handcrafted_full,Soul-RnB,Easy Listening,0.0
+handcrafted_full,Soul-RnB,Electronic,0.291304349899292
+handcrafted_full,Soul-RnB,Experimental,0.021739130839705467
+handcrafted_full,Soul-RnB,Folk,0.017391303554177284
+handcrafted_full,Soul-RnB,Hip-Hop,0.11739130318164825
+handcrafted_full,Soul-RnB,Instrumental,0.03478260710835457
+handcrafted_full,Soul-RnB,International,0.0260869562625885
+handcrafted_full,Soul-RnB,Jazz,0.008695651777088642
+handcrafted_full,Soul-RnB,Old-Time / Historic,0.0
+handcrafted_full,Soul-RnB,Pop,0.03913043439388275
+handcrafted_full,Soul-RnB,Rock,0.33478260040283203
+handcrafted_full,Soul-RnB,Soul-RnB,0.06956521421670914
+handcrafted_full,Soul-RnB,Spoken,0.0
+handcrafted_full,Spoken,Blues,0.0
+handcrafted_full,Spoken,Classical,0.011111111380159855
+handcrafted_full,Spoken,Country,0.0
+handcrafted_full,Spoken,Easy Listening,0.0
+handcrafted_full,Spoken,Electronic,0.05000000074505806
+handcrafted_full,Spoken,Experimental,0.10000000149011612
+handcrafted_full,Spoken,Folk,0.06666667014360428
+handcrafted_full,Spoken,Hip-Hop,0.03333333507180214
+handcrafted_full,Spoken,Instrumental,0.02222222276031971
+handcrafted_full,Spoken,International,0.07777778059244156
+handcrafted_full,Spoken,Jazz,0.0055555556900799274
+handcrafted_full,Spoken,Old-Time / Historic,0.0055555556900799274
+handcrafted_full,Spoken,Pop,0.02222222276031971
+handcrafted_full,Spoken,Rock,0.1388888955116272
+handcrafted_full,Spoken,Soul-RnB,0.0055555556900799274
+handcrafted_full,Spoken,Spoken,0.4611110985279083
+cnn_resnet_medium,Blues,Blues,0.027272727340459824
+cnn_resnet_medium,Blues,Classical,0.00909090880304575
+cnn_resnet_medium,Blues,Country,0.04545454680919647
+cnn_resnet_medium,Blues,Easy Listening,0.0
+cnn_resnet_medium,Blues,Electronic,0.00909090880304575
+cnn_resnet_medium,Blues,Experimental,0.027272727340459824
+cnn_resnet_medium,Blues,Folk,0.05454545468091965
+cnn_resnet_medium,Blues,Hip-Hop,0.027272727340459824
+cnn_resnet_medium,Blues,Instrumental,0.072727270424366
+cnn_resnet_medium,Blues,International,0.16363635659217834
+cnn_resnet_medium,Blues,Jazz,0.00909090880304575
+cnn_resnet_medium,Blues,Old-Time / Historic,0.0
+cnn_resnet_medium,Blues,Pop,0.08181817829608917
+cnn_resnet_medium,Blues,Rock,0.4363636374473572
+cnn_resnet_medium,Blues,Soul-RnB,0.00909090880304575
+cnn_resnet_medium,Blues,Spoken,0.027272727340459824
+cnn_resnet_medium,Classical,Blues,0.004301075357943773
+cnn_resnet_medium,Classical,Classical,0.5559139847755432
+cnn_resnet_medium,Classical,Country,0.0010752688394859433
+cnn_resnet_medium,Classical,Easy Listening,0.003225806402042508
+cnn_resnet_medium,Classical,Electronic,0.07956989109516144
+cnn_resnet_medium,Classical,Experimental,0.07849462330341339
+cnn_resnet_medium,Classical,Folk,0.031182795763015747
+cnn_resnet_medium,Classical,Hip-Hop,0.003225806402042508
+cnn_resnet_medium,Classical,Instrumental,0.12365591526031494
+cnn_resnet_medium,Classical,International,0.027956988662481308
+cnn_resnet_medium,Classical,Jazz,0.03655913844704628
+cnn_resnet_medium,Classical,Old-Time / Historic,0.0010752688394859433
+cnn_resnet_medium,Classical,Pop,0.017204301431775093
+cnn_resnet_medium,Classical,Rock,0.034408602863550186
+cnn_resnet_medium,Classical,Soul-RnB,0.0010752688394859433
+cnn_resnet_medium,Classical,Spoken,0.0010752688394859433
+cnn_resnet_medium,Country,Blues,0.025925925001502037
+cnn_resnet_medium,Country,Classical,0.0
+cnn_resnet_medium,Country,Country,0.06296296417713165
+cnn_resnet_medium,Country,Easy Listening,0.0
+cnn_resnet_medium,Country,Electronic,0.02222222276031971
+cnn_resnet_medium,Country,Experimental,0.04814814776182175
+cnn_resnet_medium,Country,Folk,0.14814814925193787
+cnn_resnet_medium,Country,Hip-Hop,0.018518518656492233
+cnn_resnet_medium,Country,Instrumental,0.025925925001502037
+cnn_resnet_medium,Country,International,0.08518518507480621
+cnn_resnet_medium,Country,Jazz,0.014814814552664757
+cnn_resnet_medium,Country,Old-Time / Historic,0.0
+cnn_resnet_medium,Country,Pop,0.17407406866550446
+cnn_resnet_medium,Country,Rock,0.3629629611968994
+cnn_resnet_medium,Country,Soul-RnB,0.011111111380159855
+cnn_resnet_medium,Country,Spoken,0.0
+cnn_resnet_medium,Easy Listening,Blues,0.0
+cnn_resnet_medium,Easy Listening,Classical,0.03333333507180214
+cnn_resnet_medium,Easy Listening,Country,0.0
+cnn_resnet_medium,Easy Listening,Easy Listening,0.0
+cnn_resnet_medium,Easy Listening,Electronic,0.36666667461395264
+cnn_resnet_medium,Easy Listening,Experimental,0.03333333507180214
+cnn_resnet_medium,Easy Listening,Folk,0.0
+cnn_resnet_medium,Easy Listening,Hip-Hop,0.06666667014360428
+cnn_resnet_medium,Easy Listening,Instrumental,0.06666667014360428
+cnn_resnet_medium,Easy Listening,International,0.1666666716337204
+cnn_resnet_medium,Easy Listening,Jazz,0.0
+cnn_resnet_medium,Easy Listening,Old-Time / Historic,0.0
+cnn_resnet_medium,Easy Listening,Pop,0.06666667014360428
+cnn_resnet_medium,Easy Listening,Rock,0.13333334028720856
+cnn_resnet_medium,Easy Listening,Soul-RnB,0.06666667014360428
+cnn_resnet_medium,Easy Listening,Spoken,0.0
+cnn_resnet_medium,Electronic,Blues,0.0005279831239022315
+cnn_resnet_medium,Electronic,Classical,0.008764519356191158
+cnn_resnet_medium,Electronic,Country,0.0009503695764578879
+cnn_resnet_medium,Electronic,Easy Listening,0.001161562860943377
+cnn_resnet_medium,Electronic,Electronic,0.6486800312995911
+cnn_resnet_medium,Electronic,Experimental,0.0722280889749527
+cnn_resnet_medium,Electronic,Folk,0.012777191586792469
+cnn_resnet_medium,Electronic,Hip-Hop,0.06346356868743896
+cnn_resnet_medium,Electronic,Instrumental,0.04931362345814705
+cnn_resnet_medium,Electronic,International,0.02439281903207302
+cnn_resnet_medium,Electronic,Jazz,0.006652587093412876
+cnn_resnet_medium,Electronic,Old-Time / Historic,0.0003167898685205728
+cnn_resnet_medium,Electronic,Pop,0.03812038153409958
+cnn_resnet_medium,Electronic,Rock,0.06420274823904037
+cnn_resnet_medium,Electronic,Soul-RnB,0.007180570159107447
+cnn_resnet_medium,Electronic,Spoken,0.0012671594740822911
+cnn_resnet_medium,Experimental,Blues,0.0038575667422264814
+cnn_resnet_medium,Experimental,Classical,0.018991097807884216
+cnn_resnet_medium,Experimental,Country,0.0032640949357300997
+cnn_resnet_medium,Experimental,Easy Listening,0.0008902077097445726
+cnn_resnet_medium,Experimental,Electronic,0.21928782761096954
+cnn_resnet_medium,Experimental,Experimental,0.2955489754676819
+cnn_resnet_medium,Experimental,Folk,0.05103857442736626
+cnn_resnet_medium,Experimental,Hip-Hop,0.03323442116379738
+cnn_resnet_medium,Experimental,Instrumental,0.08842729777097702
+cnn_resnet_medium,Experimental,International,0.01988130621612072
+cnn_resnet_medium,Experimental,Jazz,0.01928783394396305
+cnn_resnet_medium,Experimental,Old-Time / Historic,0.0011869436129927635
+cnn_resnet_medium,Experimental,Pop,0.0540059357881546
+cnn_resnet_medium,Experimental,Rock,0.17655786871910095
+cnn_resnet_medium,Experimental,Soul-RnB,0.002373887225985527
+cnn_resnet_medium,Experimental,Spoken,0.01216617226600647
+cnn_resnet_medium,Folk,Blues,0.007894736714661121
+cnn_resnet_medium,Folk,Classical,0.024122806265950203
+cnn_resnet_medium,Folk,Country,0.014473684132099152
+cnn_resnet_medium,Folk,Easy Listening,0.0004385965003166348
+cnn_resnet_medium,Folk,Electronic,0.05263157933950424
+cnn_resnet_medium,Folk,Experimental,0.08684210479259491
+cnn_resnet_medium,Folk,Folk,0.4587719440460205
+cnn_resnet_medium,Folk,Hip-Hop,0.010526316240429878
+cnn_resnet_medium,Folk,Instrumental,0.0671052634716034
+cnn_resnet_medium,Folk,International,0.036403506994247437
+cnn_resnet_medium,Folk,Jazz,0.018421052023768425
+cnn_resnet_medium,Folk,Old-Time / Historic,0.001754386001266539
+cnn_resnet_medium,Folk,Pop,0.07938596606254578
+cnn_resnet_medium,Folk,Rock,0.1377193033695221
+cnn_resnet_medium,Folk,Soul-RnB,0.0013157895300537348
+cnn_resnet_medium,Folk,Spoken,0.0021929824724793434
+cnn_resnet_medium,Hip-Hop,Blues,0.0015197568573057652
+cnn_resnet_medium,Hip-Hop,Classical,0.0006079027079977095
+cnn_resnet_medium,Hip-Hop,Country,0.0021276595070958138
+cnn_resnet_medium,Hip-Hop,Easy Listening,0.0009118540911003947
+cnn_resnet_medium,Hip-Hop,Electronic,0.1984802484512329
+cnn_resnet_medium,Hip-Hop,Experimental,0.027659574523568153
+cnn_resnet_medium,Hip-Hop,Folk,0.008206686936318874
+cnn_resnet_medium,Hip-Hop,Hip-Hop,0.6313070058822632
+cnn_resnet_medium,Hip-Hop,Instrumental,0.009118541143834591
+cnn_resnet_medium,Hip-Hop,International,0.027659574523568153
+cnn_resnet_medium,Hip-Hop,Jazz,0.003951367922127247
+cnn_resnet_medium,Hip-Hop,Old-Time / Historic,0.0
+cnn_resnet_medium,Hip-Hop,Pop,0.026747720316052437
+cnn_resnet_medium,Hip-Hop,Rock,0.050759878009557724
+cnn_resnet_medium,Hip-Hop,Soul-RnB,0.007598784286528826
+cnn_resnet_medium,Hip-Hop,Spoken,0.0033434650395065546
+cnn_resnet_medium,Instrumental,Blues,0.0
+cnn_resnet_medium,Instrumental,Classical,0.09207920730113983
+cnn_resnet_medium,Instrumental,Country,0.0019801980815827847
+cnn_resnet_medium,Instrumental,Easy Listening,0.0014851485611870885
+cnn_resnet_medium,Instrumental,Electronic,0.22079208493232727
+cnn_resnet_medium,Instrumental,Experimental,0.13019801676273346
+cnn_resnet_medium,Instrumental,Folk,0.06386138498783112
+cnn_resnet_medium,Instrumental,Hip-Hop,0.015346534550189972
+cnn_resnet_medium,Instrumental,Instrumental,0.251485139131546
+cnn_resnet_medium,Instrumental,International,0.010396040044724941
+cnn_resnet_medium,Instrumental,Jazz,0.028712870553135872
+cnn_resnet_medium,Instrumental,Old-Time / Historic,0.0004950495203956962
+cnn_resnet_medium,Instrumental,Pop,0.037128712981939316
+cnn_resnet_medium,Instrumental,Rock,0.14108911156654358
+cnn_resnet_medium,Instrumental,Soul-RnB,0.0034653465263545513
+cnn_resnet_medium,Instrumental,Spoken,0.0014851485611870885
+cnn_resnet_medium,International,Blues,0.004575163591653109
+cnn_resnet_medium,International,Classical,0.009150327183306217
+cnn_resnet_medium,International,Country,0.02222222276031971
+cnn_resnet_medium,International,Easy Listening,0.0013071895809844136
+cnn_resnet_medium,International,Electronic,0.13856209814548492
+cnn_resnet_medium,International,Experimental,0.05359477177262306
+cnn_resnet_medium,International,Folk,0.05424836650490761
+cnn_resnet_medium,International,Hip-Hop,0.05424836650490761
+cnn_resnet_medium,International,Instrumental,0.024836601689457893
+cnn_resnet_medium,International,International,0.393464058637619
+cnn_resnet_medium,International,Jazz,0.05032679811120033
+cnn_resnet_medium,International,Old-Time / Historic,0.0006535947904922068
+cnn_resnet_medium,International,Pop,0.06209150329232216
+cnn_resnet_medium,International,Rock,0.1111111119389534
+cnn_resnet_medium,International,Soul-RnB,0.013725490309298038
+cnn_resnet_medium,International,Spoken,0.0058823530562222
+cnn_resnet_medium,Jazz,Blues,0.01034482754766941
+cnn_resnet_medium,Jazz,Classical,0.10172414034605026
+cnn_resnet_medium,Jazz,Country,0.015517241321504116
+cnn_resnet_medium,Jazz,Easy Listening,0.0017241379246115685
+cnn_resnet_medium,Jazz,Electronic,0.11206896603107452
+cnn_resnet_medium,Jazz,Experimental,0.08275862038135529
+cnn_resnet_medium,Jazz,Folk,0.07241379469633102
+cnn_resnet_medium,Jazz,Hip-Hop,0.017241379246115685
+cnn_resnet_medium,Jazz,Instrumental,0.0672413781285286
+cnn_resnet_medium,Jazz,International,0.10862068831920624
+cnn_resnet_medium,Jazz,Jazz,0.08275862038135529
+cnn_resnet_medium,Jazz,Old-Time / Historic,0.0017241379246115685
+cnn_resnet_medium,Jazz,Pop,0.07068965584039688
+cnn_resnet_medium,Jazz,Rock,0.23275862634181976
+cnn_resnet_medium,Jazz,Soul-RnB,0.02068965509533882
+cnn_resnet_medium,Jazz,Spoken,0.0017241379246115685
+cnn_resnet_medium,Old-Time / Historic,Blues,0.0
+cnn_resnet_medium,Old-Time / Historic,Classical,0.007894736714661121
+cnn_resnet_medium,Old-Time / Historic,Country,0.0
+cnn_resnet_medium,Old-Time / Historic,Easy Listening,0.0
+cnn_resnet_medium,Old-Time / Historic,Electronic,0.010526316240429878
+cnn_resnet_medium,Old-Time / Historic,Experimental,0.027631578966975212
+cnn_resnet_medium,Old-Time / Historic,Folk,0.003947368357330561
+cnn_resnet_medium,Old-Time / Historic,Hip-Hop,0.0013157895300537348
+cnn_resnet_medium,Old-Time / Historic,Instrumental,0.0026315790601074696
+cnn_resnet_medium,Old-Time / Historic,International,0.01315789483487606
+cnn_resnet_medium,Old-Time / Historic,Jazz,0.007894736714661121
+cnn_resnet_medium,Old-Time / Historic,Old-Time / Historic,0.9118421077728271
+cnn_resnet_medium,Old-Time / Historic,Pop,0.0013157895300537348
+cnn_resnet_medium,Old-Time / Historic,Rock,0.00657894741743803
+cnn_resnet_medium,Old-Time / Historic,Soul-RnB,0.0
+cnn_resnet_medium,Old-Time / Historic,Spoken,0.005263158120214939
+cnn_resnet_medium,Pop,Blues,0.009550562128424644
+cnn_resnet_medium,Pop,Classical,0.010674157179892063
+cnn_resnet_medium,Pop,Country,0.0174157302826643
+cnn_resnet_medium,Pop,Easy Listening,0.001123595517128706
+cnn_resnet_medium,Pop,Electronic,0.20280899107456207
+cnn_resnet_medium,Pop,Experimental,0.08707865327596664
+cnn_resnet_medium,Pop,Folk,0.0949438214302063
+cnn_resnet_medium,Pop,Hip-Hop,0.05393258482217789
+cnn_resnet_medium,Pop,Instrumental,0.04775280877947807
+cnn_resnet_medium,Pop,International,0.03932584449648857
+cnn_resnet_medium,Pop,Jazz,0.02247191034257412
+cnn_resnet_medium,Pop,Old-Time / Historic,0.002247191034257412
+cnn_resnet_medium,Pop,Pop,0.1022471934556961
+cnn_resnet_medium,Pop,Rock,0.2887640595436096
+cnn_resnet_medium,Pop,Soul-RnB,0.012921348214149475
+cnn_resnet_medium,Pop,Spoken,0.006741573102772236
+cnn_resnet_medium,Rock,Blues,0.0031924883369356394
+cnn_resnet_medium,Rock,Classical,0.002347417874261737
+cnn_resnet_medium,Rock,Country,0.00929577462375164
+cnn_resnet_medium,Rock,Easy Listening,0.0001877934264484793
+cnn_resnet_medium,Rock,Electronic,0.060563381761312485
+cnn_resnet_medium,Rock,Experimental,0.04685445874929428
+cnn_resnet_medium,Rock,Folk,0.030140845105051994
+cnn_resnet_medium,Rock,Hip-Hop,0.014084506779909134
+cnn_resnet_medium,Rock,Instrumental,0.027699530124664307
+cnn_resnet_medium,Rock,International,0.01370892021805048
+cnn_resnet_medium,Rock,Jazz,0.010704224929213524
+cnn_resnet_medium,Rock,Old-Time / Historic,0.0006572770071215928
+cnn_resnet_medium,Rock,Pop,0.048732396215200424
+cnn_resnet_medium,Rock,Rock,0.7233802676200867
+cnn_resnet_medium,Rock,Soul-RnB,0.004694835748523474
+cnn_resnet_medium,Rock,Spoken,0.0037558686453849077
+cnn_resnet_medium,Soul-RnB,Blues,0.01304347813129425
+cnn_resnet_medium,Soul-RnB,Classical,0.0
+cnn_resnet_medium,Soul-RnB,Country,0.01304347813129425
+cnn_resnet_medium,Soul-RnB,Easy Listening,0.004347825888544321
+cnn_resnet_medium,Soul-RnB,Electronic,0.2130434811115265
+cnn_resnet_medium,Soul-RnB,Experimental,0.03478260710835457
+cnn_resnet_medium,Soul-RnB,Folk,0.08695652335882187
+cnn_resnet_medium,Soul-RnB,Hip-Hop,0.0
+cnn_resnet_medium,Soul-RnB,Instrumental,0.04782608523964882
+cnn_resnet_medium,Soul-RnB,International,0.08260869234800339
+cnn_resnet_medium,Soul-RnB,Jazz,0.052173912525177
+cnn_resnet_medium,Soul-RnB,Old-Time / Historic,0.0
+cnn_resnet_medium,Soul-RnB,Pop,0.056521739810705185
+cnn_resnet_medium,Soul-RnB,Rock,0.35652172565460205
+cnn_resnet_medium,Soul-RnB,Soul-RnB,0.03913043439388275
+cnn_resnet_medium,Soul-RnB,Spoken,0.0
+cnn_resnet_medium,Spoken,Blues,0.0
+cnn_resnet_medium,Spoken,Classical,0.0
+cnn_resnet_medium,Spoken,Country,0.0055555556900799274
+cnn_resnet_medium,Spoken,Easy Listening,0.0
+cnn_resnet_medium,Spoken,Electronic,0.02777777798473835
+cnn_resnet_medium,Spoken,Experimental,0.15555556118488312
+cnn_resnet_medium,Spoken,Folk,0.09444444626569748
+cnn_resnet_medium,Spoken,Hip-Hop,0.06111111119389534
+cnn_resnet_medium,Spoken,Instrumental,0.0
+cnn_resnet_medium,Spoken,International,0.05000000074505806
+cnn_resnet_medium,Spoken,Jazz,0.0
+cnn_resnet_medium,Spoken,Old-Time / Historic,0.0
+cnn_resnet_medium,Spoken,Pop,0.03333333507180214
+cnn_resnet_medium,Spoken,Rock,0.18888889253139496
+cnn_resnet_medium,Spoken,Soul-RnB,0.0
+cnn_resnet_medium,Spoken,Spoken,0.38333332538604736
+vggish_pretrained,Blues,Blues,0.145454540848732
+vggish_pretrained,Blues,Classical,0.0
+vggish_pretrained,Blues,Country,0.027272727340459824
+vggish_pretrained,Blues,Easy Listening,0.0
+vggish_pretrained,Blues,Electronic,0.072727270424366
+vggish_pretrained,Blues,Experimental,0.0181818176060915
+vggish_pretrained,Blues,Folk,0.1090909093618393
+vggish_pretrained,Blues,Hip-Hop,0.072727270424366
+vggish_pretrained,Blues,Instrumental,0.00909090880304575
+vggish_pretrained,Blues,International,0.036363635212183
+vggish_pretrained,Blues,Jazz,0.0
+vggish_pretrained,Blues,Old-Time / Historic,0.0
+vggish_pretrained,Blues,Pop,0.06363636255264282
+vggish_pretrained,Blues,Rock,0.44545453786849976
+vggish_pretrained,Blues,Soul-RnB,0.0
+vggish_pretrained,Blues,Spoken,0.0
+vggish_pretrained,Classical,Blues,0.0
+vggish_pretrained,Classical,Classical,0.7215054035186768
+vggish_pretrained,Classical,Country,0.0010752688394859433
+vggish_pretrained,Classical,Easy Listening,0.0010752688394859433
+vggish_pretrained,Classical,Electronic,0.03978494554758072
+vggish_pretrained,Classical,Experimental,0.0462365597486496
+vggish_pretrained,Classical,Folk,0.02150537632405758
+vggish_pretrained,Classical,Hip-Hop,0.005376344081014395
+vggish_pretrained,Classical,Instrumental,0.09892473369836807
+vggish_pretrained,Classical,International,0.011827956885099411
+vggish_pretrained,Classical,Jazz,0.02688172087073326
+vggish_pretrained,Classical,Old-Time / Historic,0.0010752688394859433
+vggish_pretrained,Classical,Pop,0.004301075357943773
+vggish_pretrained,Classical,Rock,0.020430106669664383
+vggish_pretrained,Classical,Soul-RnB,0.0
+vggish_pretrained,Classical,Spoken,0.0
+vggish_pretrained,Country,Blues,0.018518518656492233
+vggish_pretrained,Country,Classical,0.0
+vggish_pretrained,Country,Country,0.31481480598449707
+vggish_pretrained,Country,Easy Listening,0.0
+vggish_pretrained,Country,Electronic,0.003703703638166189
+vggish_pretrained,Country,Experimental,0.025925925001502037
+vggish_pretrained,Country,Folk,0.2074074000120163
+vggish_pretrained,Country,Hip-Hop,0.011111111380159855
+vggish_pretrained,Country,Instrumental,0.003703703638166189
+vggish_pretrained,Country,International,0.06296296417713165
+vggish_pretrained,Country,Jazz,0.003703703638166189
+vggish_pretrained,Country,Old-Time / Historic,0.0
+vggish_pretrained,Country,Pop,0.08518518507480621
+vggish_pretrained,Country,Rock,0.2629629671573639
+vggish_pretrained,Country,Soul-RnB,0.0
+vggish_pretrained,Country,Spoken,0.0
+vggish_pretrained,Easy Listening,Blues,0.0
+vggish_pretrained,Easy Listening,Classical,0.0
+vggish_pretrained,Easy Listening,Country,0.0
+vggish_pretrained,Easy Listening,Easy Listening,0.03333333507180214
+vggish_pretrained,Easy Listening,Electronic,0.46666666865348816
+vggish_pretrained,Easy Listening,Experimental,0.0
+vggish_pretrained,Easy Listening,Folk,0.0
+vggish_pretrained,Easy Listening,Hip-Hop,0.06666667014360428
+vggish_pretrained,Easy Listening,Instrumental,0.13333334028720856
+vggish_pretrained,Easy Listening,International,0.10000000149011612
+vggish_pretrained,Easy Listening,Jazz,0.0
+vggish_pretrained,Easy Listening,Old-Time / Historic,0.0
+vggish_pretrained,Easy Listening,Pop,0.13333334028720856
+vggish_pretrained,Easy Listening,Rock,0.03333333507180214
+vggish_pretrained,Easy Listening,Soul-RnB,0.03333333507180214
+vggish_pretrained,Easy Listening,Spoken,0.0
+vggish_pretrained,Electronic,Blues,0.0006335797370411456
+vggish_pretrained,Electronic,Classical,0.003379091853275895
+vggish_pretrained,Electronic,Country,0.0012671594740822911
+vggish_pretrained,Electronic,Easy Listening,0.0012671594740822911
+vggish_pretrained,Electronic,Electronic,0.7034847140312195
+vggish_pretrained,Electronic,Experimental,0.054910242557525635
+vggish_pretrained,Electronic,Folk,0.012038014829158783
+vggish_pretrained,Electronic,Hip-Hop,0.05839493125677109
+vggish_pretrained,Electronic,Instrumental,0.039915524423122406
+vggish_pretrained,Electronic,International,0.023970432579517365
+vggish_pretrained,Electronic,Jazz,0.00623020064085722
+vggish_pretrained,Electronic,Old-Time / Historic,0.0
+vggish_pretrained,Electronic,Pop,0.03231256455183029
+vggish_pretrained,Electronic,Rock,0.05723336711525917
+vggish_pretrained,Electronic,Soul-RnB,0.004857444670051336
+vggish_pretrained,Electronic,Spoken,0.00010559662041487172
+vggish_pretrained,Experimental,Blues,0.0008902077097445726
+vggish_pretrained,Experimental,Classical,0.009198812767863274
+vggish_pretrained,Experimental,Country,0.0038575667422264814
+vggish_pretrained,Experimental,Easy Listening,0.0014836795162409544
+vggish_pretrained,Experimental,Electronic,0.22640949487686157
+vggish_pretrained,Experimental,Experimental,0.3338278830051422
+vggish_pretrained,Experimental,Folk,0.05845697224140167
+vggish_pretrained,Experimental,Hip-Hop,0.029376855120062828
+vggish_pretrained,Experimental,Instrumental,0.0771513357758522
+vggish_pretrained,Experimental,International,0.013946587219834328
+vggish_pretrained,Experimental,Jazz,0.02373887225985527
+vggish_pretrained,Experimental,Old-Time / Historic,0.005341246258467436
+vggish_pretrained,Experimental,Pop,0.04925816133618355
+vggish_pretrained,Experimental,Rock,0.15786349773406982
+vggish_pretrained,Experimental,Soul-RnB,0.002077151322737336
+vggish_pretrained,Experimental,Spoken,0.007121661677956581
+vggish_pretrained,Folk,Blues,0.00657894741743803
+vggish_pretrained,Folk,Classical,0.005701754242181778
+vggish_pretrained,Folk,Country,0.01491228025406599
+vggish_pretrained,Folk,Easy Listening,0.0008771930006332695
+vggish_pretrained,Folk,Electronic,0.053947366774082184
+vggish_pretrained,Folk,Experimental,0.04868420958518982
+vggish_pretrained,Folk,Folk,0.5359649062156677
+vggish_pretrained,Folk,Hip-Hop,0.00657894741743803
+vggish_pretrained,Folk,Instrumental,0.0767543837428093
+vggish_pretrained,Folk,International,0.031578946858644485
+vggish_pretrained,Folk,Jazz,0.01315789483487606
+vggish_pretrained,Folk,Old-Time / Historic,0.0
+vggish_pretrained,Folk,Pop,0.06359649449586868
+vggish_pretrained,Folk,Rock,0.13728070259094238
+vggish_pretrained,Folk,Soul-RnB,0.003070175414904952
+vggish_pretrained,Folk,Spoken,0.0013157895300537348
+vggish_pretrained,Hip-Hop,Blues,0.0021276595070958138
+vggish_pretrained,Hip-Hop,Classical,0.0
+vggish_pretrained,Hip-Hop,Country,0.0021276595070958138
+vggish_pretrained,Hip-Hop,Easy Listening,0.00030395135399885476
+vggish_pretrained,Hip-Hop,Electronic,0.18206687271595
+vggish_pretrained,Hip-Hop,Experimental,0.015805471688508987
+vggish_pretrained,Hip-Hop,Folk,0.005471124779433012
+vggish_pretrained,Hip-Hop,Hip-Hop,0.6741641163825989
+vggish_pretrained,Hip-Hop,Instrumental,0.007294832728803158
+vggish_pretrained,Hip-Hop,International,0.020668692886829376
+vggish_pretrained,Hip-Hop,Jazz,0.0030395137146115303
+vggish_pretrained,Hip-Hop,Old-Time / Historic,0.0
+vggish_pretrained,Hip-Hop,Pop,0.030091185122728348
+vggish_pretrained,Hip-Hop,Rock,0.04468085244297981
+vggish_pretrained,Hip-Hop,Soul-RnB,0.009726443327963352
+vggish_pretrained,Hip-Hop,Spoken,0.002431610831990838
+vggish_pretrained,Instrumental,Blues,0.0019801980815827847
+vggish_pretrained,Instrumental,Classical,0.049504950642585754
+vggish_pretrained,Instrumental,Country,0.0009900990407913923
+vggish_pretrained,Instrumental,Easy Listening,0.0004950495203956962
+vggish_pretrained,Instrumental,Electronic,0.20000000298023224
+vggish_pretrained,Instrumental,Experimental,0.10198019444942474
+vggish_pretrained,Instrumental,Folk,0.0712871253490448
+vggish_pretrained,Instrumental,Hip-Hop,0.011386138387024403
+vggish_pretrained,Instrumental,Instrumental,0.3594059348106384
+vggish_pretrained,Instrumental,International,0.0089108906686306
+vggish_pretrained,Instrumental,Jazz,0.019306929782032967
+vggish_pretrained,Instrumental,Old-Time / Historic,0.0009900990407913923
+vggish_pretrained,Instrumental,Pop,0.040594059973955154
+vggish_pretrained,Instrumental,Rock,0.13069306313991547
+vggish_pretrained,Instrumental,Soul-RnB,0.0019801980815827847
+vggish_pretrained,Instrumental,Spoken,0.0004950495203956962
+vggish_pretrained,International,Blues,0.0058823530562222
+vggish_pretrained,International,Classical,0.009803921915590763
+vggish_pretrained,International,Country,0.019607843831181526
+vggish_pretrained,International,Easy Listening,0.0013071895809844136
+vggish_pretrained,International,Electronic,0.10849673300981522
+vggish_pretrained,International,Experimental,0.04444444552063942
+vggish_pretrained,International,Folk,0.05359477177262306
+vggish_pretrained,International,Hip-Hop,0.029411764815449715
+vggish_pretrained,International,Instrumental,0.01503267977386713
+vggish_pretrained,International,International,0.5124183297157288
+vggish_pretrained,International,Jazz,0.024836601689457893
+vggish_pretrained,International,Old-Time / Historic,0.0019607844296842813
+vggish_pretrained,International,Pop,0.059477124363183975
+vggish_pretrained,International,Rock,0.09346405416727066
+vggish_pretrained,International,Soul-RnB,0.01503267977386713
+vggish_pretrained,International,Spoken,0.0052287583239376545
+vggish_pretrained,Jazz,Blues,0.013793103396892548
+vggish_pretrained,Jazz,Classical,0.03620689734816551
+vggish_pretrained,Jazz,Country,0.01034482754766941
+vggish_pretrained,Jazz,Easy Listening,0.0017241379246115685
+vggish_pretrained,Jazz,Electronic,0.1189655140042305
+vggish_pretrained,Jazz,Experimental,0.10000000149011612
+vggish_pretrained,Jazz,Folk,0.04827586188912392
+vggish_pretrained,Jazz,Hip-Hop,0.013793103396892548
+vggish_pretrained,Jazz,Instrumental,0.1068965494632721
+vggish_pretrained,Jazz,International,0.0396551713347435
+vggish_pretrained,Jazz,Jazz,0.341379314661026
+vggish_pretrained,Jazz,Old-Time / Historic,0.0
+vggish_pretrained,Jazz,Pop,0.022413793951272964
+vggish_pretrained,Jazz,Rock,0.14482758939266205
+vggish_pretrained,Jazz,Soul-RnB,0.0
+vggish_pretrained,Jazz,Spoken,0.0017241379246115685
+vggish_pretrained,Old-Time / Historic,Blues,0.0
+vggish_pretrained,Old-Time / Historic,Classical,0.00657894741743803
+vggish_pretrained,Old-Time / Historic,Country,0.0
+vggish_pretrained,Old-Time / Historic,Easy Listening,0.0
+vggish_pretrained,Old-Time / Historic,Electronic,0.01184210553765297
+vggish_pretrained,Old-Time / Historic,Experimental,0.02631578966975212
+vggish_pretrained,Old-Time / Historic,Folk,0.0026315790601074696
+vggish_pretrained,Old-Time / Historic,Hip-Hop,0.0013157895300537348
+vggish_pretrained,Old-Time / Historic,Instrumental,0.00657894741743803
+vggish_pretrained,Old-Time / Historic,International,0.009210526011884212
+vggish_pretrained,Old-Time / Historic,Jazz,0.0026315790601074696
+vggish_pretrained,Old-Time / Historic,Old-Time / Historic,0.9210526347160339
+vggish_pretrained,Old-Time / Historic,Pop,0.0026315790601074696
+vggish_pretrained,Old-Time / Historic,Rock,0.007894736714661121
+vggish_pretrained,Old-Time / Historic,Soul-RnB,0.0
+vggish_pretrained,Old-Time / Historic,Spoken,0.0013157895300537348
+vggish_pretrained,Pop,Blues,0.002808988792821765
+vggish_pretrained,Pop,Classical,0.005056179594248533
+vggish_pretrained,Pop,Country,0.01573033630847931
+vggish_pretrained,Pop,Easy Listening,0.000561797758564353
+vggish_pretrained,Pop,Electronic,0.22752809524536133
+vggish_pretrained,Pop,Experimental,0.07303370535373688
+vggish_pretrained,Pop,Folk,0.09382022172212601
+vggish_pretrained,Pop,Hip-Hop,0.06235954910516739
+vggish_pretrained,Pop,Instrumental,0.038764044642448425
+vggish_pretrained,Pop,International,0.037078652530908585
+vggish_pretrained,Pop,Jazz,0.008988764137029648
+vggish_pretrained,Pop,Old-Time / Historic,0.0
+vggish_pretrained,Pop,Pop,0.15730337798595428
+vggish_pretrained,Pop,Rock,0.26011234521865845
+vggish_pretrained,Pop,Soul-RnB,0.013483146205544472
+vggish_pretrained,Pop,Spoken,0.003370786551386118
+vggish_pretrained,Rock,Blues,0.0027230046689510345
+vggish_pretrained,Rock,Classical,0.001408450654707849
+vggish_pretrained,Rock,Country,0.007605633698403835
+vggish_pretrained,Rock,Easy Listening,0.0001877934264484793
+vggish_pretrained,Rock,Electronic,0.055492956191301346
+vggish_pretrained,Rock,Experimental,0.03173708915710449
+vggish_pretrained,Rock,Folk,0.03239436447620392
+vggish_pretrained,Rock,Hip-Hop,0.01164319273084402
+vggish_pretrained,Rock,Instrumental,0.02488262951374054
+vggish_pretrained,Rock,International,0.009107980877161026
+vggish_pretrained,Rock,Jazz,0.005633802618831396
+vggish_pretrained,Rock,Old-Time / Historic,0.0
+vggish_pretrained,Rock,Pop,0.04206572845578194
+vggish_pretrained,Rock,Rock,0.7670422792434692
+vggish_pretrained,Rock,Soul-RnB,0.007042253389954567
+vggish_pretrained,Rock,Spoken,0.0010328638600185513
+vggish_pretrained,Soul-RnB,Blues,0.004347825888544321
+vggish_pretrained,Soul-RnB,Classical,0.0
+vggish_pretrained,Soul-RnB,Country,0.021739130839705467
+vggish_pretrained,Soul-RnB,Easy Listening,0.0
+vggish_pretrained,Soul-RnB,Electronic,0.21739129722118378
+vggish_pretrained,Soul-RnB,Experimental,0.0260869562625885
+vggish_pretrained,Soul-RnB,Folk,0.06521739065647125
+vggish_pretrained,Soul-RnB,Hip-Hop,0.03478260710835457
+vggish_pretrained,Soul-RnB,Instrumental,0.030434781685471535
+vggish_pretrained,Soul-RnB,International,0.052173912525177
+vggish_pretrained,Soul-RnB,Jazz,0.0
+vggish_pretrained,Soul-RnB,Old-Time / Historic,0.0
+vggish_pretrained,Soul-RnB,Pop,0.06521739065647125
+vggish_pretrained,Soul-RnB,Rock,0.3478260934352875
+vggish_pretrained,Soul-RnB,Soul-RnB,0.134782612323761
+vggish_pretrained,Soul-RnB,Spoken,0.0
+vggish_pretrained,Spoken,Blues,0.0055555556900799274
+vggish_pretrained,Spoken,Classical,0.0055555556900799274
+vggish_pretrained,Spoken,Country,0.0
+vggish_pretrained,Spoken,Easy Listening,0.0
+vggish_pretrained,Spoken,Electronic,0.02222222276031971
+vggish_pretrained,Spoken,Experimental,0.12222222238779068
+vggish_pretrained,Spoken,Folk,0.03888889029622078
+vggish_pretrained,Spoken,Hip-Hop,0.0555555559694767
+vggish_pretrained,Spoken,Instrumental,0.0055555556900799274
+vggish_pretrained,Spoken,International,0.10555555671453476
+vggish_pretrained,Spoken,Jazz,0.0055555556900799274
+vggish_pretrained,Spoken,Old-Time / Historic,0.0055555556900799274
+vggish_pretrained,Spoken,Pop,0.03333333507180214
+vggish_pretrained,Spoken,Rock,0.12777778506278992
+vggish_pretrained,Spoken,Soul-RnB,0.0
+vggish_pretrained,Spoken,Spoken,0.46666666865348816

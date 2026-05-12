@@ -1,0 +1,5 @@
+representation,silhouette_score
+mfcc_only,-0.10749924182891846
+handcrafted_full,-0.10547079890966415
+cnn_resnet_medium,-0.02219790406525135
+vggish_pretrained,-0.06654170900583267
