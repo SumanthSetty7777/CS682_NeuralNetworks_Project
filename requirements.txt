@@ -9,3 +9,4 @@ tqdm
 umap-learn
 torch
 torchvggish
+scipy
